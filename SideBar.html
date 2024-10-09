@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Sidebar - Tivotal</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="SideBar.css" />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo">
+        <i class="fab fa-trade-federation"></i>
+        <span class="logo-name">Koushik</span>
+      </div>
+      <ul class="nav-list">
+        <!-- Dashboard Item -->
+        <li>
+          <a href="#">
+            <i class="fab fa-microsoft"></i>
+            <span class="link-name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a href="#" class="link-name">Dashboard</a></li>
+          </ul>
+        </li>
+
+        <!-- Projects Dropdown -->
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="fab fa-codepen"></i>
+              <span class="link-name">Projects</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">Projects</a></li>
+            <li><a href="Dice.html" target="_blank">Dice</a></li>
+            <li><a href="Timer.html" target="_blank">Timer</a></li>
+            <li><a href="Stopwatch.html" target="_blank">StopWatch</a></li>
+            <li><a href="Calc.html" target="_blank">Calculator</a></li>
+          </ul>
+        </li>
+
+        <!-- Social Media Dropdown -->
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="fab fa-blogger"></i>
+              <span class="link-name">SocialMedia</span>
+            </a>
+            <i class="fas fa-caret-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="#" class="link-name">SocialMedia</a></li>
+            <li><a href="https://www.instagram.com/shiva.koushik.754/" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/koushik9848" target="_blank">Github</a></li>
+          </ul>
+        </li>
+
+        <!-- Profile Section -->
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="profile.jpg" alt="Profile Picture" />
+            </div>
+            <div class="name-job">
+              <div class="name">Koushik</div>
+              <div class="job">Student</div>
+            </div>
+            <i class="fas fa-right-to-bracket"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="home-section">
+      <div class="home-content">
+        <i class="fas fa-bars"></i>
+        <span class="text">Dropdown Sidebar Menu</span>
+      </div>
+
+      <!-- New Content for About Me and Projects -->
+      <div class="main-content">
+        <h1>About Me</h1>
+        <p>
+          Hi, I’m Koushik, a student from Telangana, India, learning web development. 
+          I enjoy working with technologies like HTML, CSS, and JavaScript to build websites and simple applications.
+           So far, I’ve created projects like a Dice Game, Timer, Stopwatch, and 
+           Calculator, which have helped me improve my coding skills.
+        </p>
+        <br>
+        <h2>Projects</h2>
+        <p>
+          I have worked on several projects to develop my coding skills. Here's a brief description of each one:
+        </p>
+        <ul>
+          <li><strong>Dice Game</strong>: This fun dice rolling game allows two players to roll their dice by clicking the "Roll" button. The game generates two random numbers (one for each player) between 1 and 6. The higher number wins, and the result is displayed as either "Player 1 Wins," "Player 2 Wins," or "It's a Draw" if both players roll the same number. The numbers are generated using <code>Math.random()</code>, and the results are shown dynamically on the screen.</li>
+          
+          <br>
+        
+          <li><strong>Timer</strong>: This countdown timer is set to December 26, 2024, the date of your semester exams. You can start the timer, and it will count down the days, hours, minutes, and seconds until that date. The timer is updated in real-time and displays a message when the countdown reaches zero. This helps keep track of the time remaining for your exams. It uses JavaScript's <code>setInterval()</code> function to update every second, and <code>new Date()</code> to calculate the difference between the current time and the target date.</li>
+          
+          <br>
+        
+          <li><strong>Stopwatch</strong>: A simple stopwatch that counts up from zero when started. The user can pause, resume, or reset the stopwatch. It uses <code>setInterval()</code> to increment the time every second, and <code>clearInterval()</code> to stop or reset the timing.</li>
+          
+          <br>
+        
+          <li><strong>Calculator</strong>: A basic calculator for performing arithmetic operations (addition, subtraction, multiplication, division). The user inputs numbers and selects an operation, and the result is displayed. The logic for the calculations is handled by JavaScript operators, with error handling for invalid input like division by zero.</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <script src="SideBar.js"></script>
+  </body>
+</html>
